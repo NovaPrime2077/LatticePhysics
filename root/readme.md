@@ -37,7 +37,7 @@ The cost function is given below:
 
 $$J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right)^2$$
 The gradient descent is given below:
-$$w_j := w_j - \frac{\alpha}{m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right) x_j^{(i)}$$
+$$w_j := w_j - \frac{\alpha}{m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right) x_i^{(i)}$$
 $$b:= b - \frac{\alpha}{m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right)$$
 
 here *m* = total number of sample, *alpha* = the learning rate. 
