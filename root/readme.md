@@ -25,9 +25,9 @@ The features are arranged in 41 columns out of which 2 are target variables and 
 The unnormalised data varies between a greater range which might hamper effective learning of the model since convergence is reached in a much more stable fashion when data is normalised. 
 The Normalisation technique used for this model is known as Z-Score Normalisation.
 
-The normalisation technique works using the following: $$ X_{\text norm} = \frac{X - \mu}{\sigma} $$
+The normalisation technique works using the following: $$X_{\text norm} = \frac{X - \mu}{\sigma}$$
 
-where $$ \mu = \frac{\sum_{i=1}^n x_i}{n}, \quad \sigma = \sqrt{\frac{\sum_{i=1}^n (x_i - \mu)^2}{n}} $$
+where $$\mu = \frac{\sum_{i=1}^n x_i}{n}, \quad \sigma = \sqrt{\frac{\sum_{i=1}^n (x_i - \mu)^2}{n}}$$
 
 ### Linear Regression for k-inf
 
@@ -35,17 +35,10 @@ The Linear regression works on the principle of reducing the squared error cost 
 
 The cost function is given below:
 
-$$
-J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right)^2
-$$
+$$J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right)^2$$
 The gradient descent is given below:
-$$
-w_j := w_j - \frac{\alpha}{m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right) x_j^{(i)}
-
-$$
-$$
-b:= b - \frac{\alpha}{m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right) 
-$$
+$$w_j := w_j - \frac{\alpha}{m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right) x_j^{(i)}$$
+$$b:= b - \frac{\alpha}{m} \sum_{i=1}^{m} \left( f_{w}(x^{(i)}) - y^{(i)} \right)$$
 
 here *m* = total number of sample, *alpha* = the learning rate. 
 
